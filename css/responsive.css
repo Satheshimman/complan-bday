@@ -1,0 +1,28 @@
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url("./complan-bday/1342345.png");
+    height: 130vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header-text {
+    font-size: 32px;
+    font-weight: 600;
+    color: black;
+  }
+  .move-text span {
+    color: black;
+    font-size: 40px;
+    margin: 70px 0px 20px 50px;
+  }
+  .move-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+  }
+  .move-img img{
+    border: 8px solid whitesmoke;
+  }
+}
