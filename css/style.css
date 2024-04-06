@@ -330,7 +330,8 @@ p {
   background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
   background-size: 300% 300%;
   animation: color 12s ease-in-out infinite; */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.295)), url("./complan-bday/nature.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.295)),
+    url("./complan-bday/nature.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -397,4 +398,67 @@ p {
 
 .img-div-11 img {
   border: 8px solid whitesmoke;
+}
+
+#sec-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #060c21;
+}
+.box {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #060c21;
+  z-index: 4;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #060c21;
+  z-index: -2;
+  filter: blur(40px);
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #060c21;
+  z-index: -1;
+}
+
+.box ::before,
+.box::after {
+  background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+.content {
+  color: white;
+  padding: 20px 30px;
+}
+
+.final {
+  border: 1px solid whitesmoke;
+  padding: 5px 20px;
+}
+
+#footer {
+  background-color: #8b3dff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

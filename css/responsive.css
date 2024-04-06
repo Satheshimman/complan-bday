@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   #header {
     background-image: url("./complan-bday/1342345.png");
     height: 130vh;
@@ -16,13 +16,34 @@
     font-size: 40px;
     margin: 70px 0px 20px 50px;
   }
-  .move-img{
+  .move-img {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 10px;
   }
-  .move-img img{
+  .move-img img {
     border: 8px solid whitesmoke;
   }
+  .box {
+    position: relative;
+    width: 280px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    z-index: 4;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  #header {
+    background-image: url("./complan-bday/1342345.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 }
